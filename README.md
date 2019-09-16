@@ -1,11 +1,25 @@
-# RFI
-detection and mitigation of Radio Frequency Interference using PURE CNNS  which are nothing but DCIGNs with out the Dense Layers.
-(more on type of NN at [neural-networks-explained](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464))
+Click here to read the PRIUS document
 
-![](https://github.com/kalyan0510/RFI/blob/master/writing/Detection%20and%20Mitigation%20of%20Radio%20Frequency%20Interferences%20using%20Pure%20CNNs-1.jpg?raw=true)
+[![PDF](https://github.com/kalyan0510/RFI/blob/master/readmemedia/page1.png)](https://drive.google.com/file/d/1AxSFng_JMC7KRKC9sU7hEIzw9RUSbNne/view?usp=sharing)
 
-![](https://github.com/kalyan0510/RFI/blob/master/writing/Detection%20and%20Mitigation%20of%20Radio%20Frequency%20Interferences%20using%20Pure%20CNNs-2.jpg?raw=true)
+#### Original signal spectogram and mitigated signal spectogram
+[![PDF](mit_comp.png)](https://drive.google.com/file/d/1AxSFng_JMC7KRKC9sU7hEIzw9RUSbNne/view?usp=sharing)
 
-![](https://github.com/kalyan0510/RFI/blob/master/writing/Detection%20and%20Mitigation%20of%20Radio%20Frequency%20Interferences%20using%20Pure%20CNNs-3.jpg?raw=true)
 
-![](https://github.com/kalyan0510/RFI/blob/master/writing/Detection%20and%20Mitigation%20of%20Radio%20Frequency%20Interferences%20using%20Pure%20CNNs-4.jpg?raw=true)
+## Run
+
+#### 1 Synthesize train data
+   ``` python synthesize.py img 48 48 1 1000 ```
+
+#### 2 MAKE THE NN LEARN THE SIMULATED IMAGES
+   ```    python mitigate.py --save-model 1 --weights output/lenet_weights_kal.hdf5 -p 48 -n 20    ``` 
+
+#### 3 CREATE/SIMULATE LARGE RF INTERFERED SPECTROGRAMS
+   ```    python synthesize.py img 480 480 1 10    ``` 
+
+#### 4 MAKE THE NN TO ESTIMATE THE FILTERS USED FOR MITIGATION
+   ```    python mitigate.py --load-model 1 --weights output/lenet_weights_kal.hdf5 -p 480 -n 20    ``` 
+   
+   RESULTS WILL BE STORED IN  ./img/R
+
+
