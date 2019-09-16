@@ -18,7 +18,7 @@ Click here to read the PRIUS document
    ```    python synthesize.py img 480 480 1 10    ``` 
 
 #### 4. MAKE THE NN TO ESTIMATE THE FILTERS USED FOR MITIGATION
-   ```    python mitigate.py --load-model 1 --weights output/lenet_weights_kal.hdf5 -p 480 -n 20    ``` 
+   ```    python mitigate.py --load-model 1 --weights output/lenet_weights_kal.hdf5 -p 480    ``` 
    
    RESULTS WILL BE STORED IN  ./img/R
 
