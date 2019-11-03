@@ -1,6 +1,3 @@
-Click here to read the PRIUS document
-
-[![PDF](https://github.com/kalyan0510/RFI/blob/master/readmemedia/page1.png)](https://drive.google.com/file/d/1AxSFng_JMC7KRKC9sU7hEIzw9RUSbNne/view?usp=sharing)
 
 #### Original signal spectogram and mitigated signal spectogram
 [![](https://github.com/kalyan0510/RFI/blob/master/readmemedia/mit_comp.png)](https://drive.google.com/file/d/1AxSFng_JMC7KRKC9sU7hEIzw9RUSbNne/view?usp=sharing)
