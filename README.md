@@ -2,7 +2,7 @@
 #### Original signal spectogram and mitigated signal spectogram
 [![](https://github.com/kalyan0510/RFI/blob/master/readmemedia/mit_comp.png)](https://drive.google.com/file/d/1AxSFng_JMC7KRKC9sU7hEIzw9RUSbNne/view?usp=sharing)
 
-
+Submission: https://drive.google.com/file/d/1AxSFng_JMC7KRKC9sU7hEIzw9RUSbNne/view
 ## Run
 
 #### 1. Synthesize train data
